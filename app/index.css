@@ -1,0 +1,69 @@
+.main {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+.header {
+    background: rgba(253, 253, 4, 0.856);
+}
+.column_wrapper {
+    background: rgb(192, 245, 192);
+}
+.row .icon_wrapper {
+    display: flex;
+    justify-content: center;
+}
+.row .icon_wrapper svg{
+    width: 20px;
+}
+.row {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.row .icon_wrapper, .row .buttons {
+    flex: 2
+}
+.row div {
+    flex: 4
+}
+
+.buttons__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row.column_wrapper .icon{
+    width: 35px;
+    /* margin-right: 10px; */
+    flex-grow: 0;
+}
+.tasks {
+    content: url('./pictures/tasks-solid.svg');
+}
+.ideas {
+    content: url('./pictures/lightbulb-regular.svg');
+}
+.random {
+    content: url('./pictures/random-solid.svg');
+}
+.edit {
+    content: url('./pictures/pen-solid.svg');
+}
+.archive {
+    content: url('./pictures/archive-solid.svg');
+}
+.delete {
+    content: url('./pictures/trash-solid.svg');
+}
+.buttons__wrapper div {
+    flex-grow: 0;
+    width: 18px;
+}
+.createNote {
+    margin-top: 10px;
+    float: right;
+}
