@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Note Editor</title>
+
 </head>
 <body>
     <div class="main">
+        <div class="addNote__wrapper invisible">
+            <form>
+                <select name="select" required>
+                    <option value="tasks">Tasks</option>
+                    <option value="idea" selected>Ideas</option>
+                    <option value="randomThoughts">Random Thoughts</option>
+                  </select>
+                  <textarea rows="20"></textarea>
+                <button id="addNote">add note</button>
+            </form>
+        </div>
+
         <div class="notes-table">
             <div class="row header">
                 <div class="icon_wrapper">
@@ -95,8 +111,8 @@
                      </div>
                 </div>
             </div>
-            <button class="createNote">Create note</button>
         </div>
+        <button class="createNote" id="createNote">Create note</button>
 
         <div class="category-table">
             <div class="row header">
@@ -153,5 +169,8 @@
             </div>
         </div>
     </div>
+
+<script type="module" src="app.js"></script>
 </body>
+
 </html>
