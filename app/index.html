@@ -15,17 +15,19 @@
     <div class="main">
         <div class="addNote__wrapper invisible">
             <form>
-                <select name="select" required>
+                <select name="select" id="categories" required>
                     <option value="tasks">Tasks</option>
-                    <option value="idea" selected>Ideas</option>
-                    <option value="randomThoughts">Random Thoughts</option>
+                    <option value="ideas" selected>Ideas</option>
+                    <option value="random">Random Thoughts</option>
                   </select>
-                  <textarea rows="20"></textarea>
+                  <input type="text" placeholder="name" id="note__name">
+                  <textarea rows="20" id="note__text"></textarea>
                 <button id="addNote">add note</button>
             </form>
         </div>
 
         <div class="notes-table">
+
             <div class="row header">
                 <div class="icon_wrapper">
 
@@ -111,9 +113,9 @@
                      </div>
                 </div>
             </div>
+
         </div>
         <button class="createNote" id="createNote">Create note</button>
-
         <div class="category-table">
             <div class="row header">
                 <div class="icon_wrapper">
@@ -170,7 +172,7 @@
         </div>
     </div>
 
-<script type="module" src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>
